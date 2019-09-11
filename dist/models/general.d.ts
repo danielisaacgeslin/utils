@@ -4,4 +4,5 @@ export declare type IEntityMap<T> = {
 export declare const Color: {
     BLACK: string;
     GRAY: string;
+    WHITE: string;
 };
