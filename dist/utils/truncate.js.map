@@ -1,0 +1,1 @@
+{"version":3,"file":"truncate.js","sourceRoot":"","sources":["../../src/utils/truncate.ts"],"names":[],"mappings":";;AAAa,QAAA,QAAQ,GAAG,CAAC,GAAW,EAAE,SAAiB,EAAE,UAAkB,KAAK,EAAU,EAAE;IAC1F,IAAI,GAAG,CAAC,MAAM,GAAG,SAAS;QAAE,OAAO,GAAG,CAAC;;QAClC,OAAO,GAAG,GAAG,CAAC,SAAS,CAAC,CAAC,EAAE,SAAS,CAAC,GAAG,OAAO,EAAE,CAAC;AACzD,CAAC,CAAC"}

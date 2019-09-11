@@ -1,0 +1,77 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "utils",
+  "main": "dist/index.js",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "scripts": {
+    "start": "ts-node-dev --respawn ./develop-here.ts",
+    "test": "nyc mocha ./src/**/*.spec.ts --exit",
+    "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf ./dist && mkdir dist"
+  },
+  "author": "daniel isaac geslin",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/sinon": "^7.0.10",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "nyc": "^13.3.0",
+    "pre-commit": "^1.2.2",
+    "rxjs": "^6.5.2",
+    "sinon": "^7.3.0",
+    "ts-node": "^8.0.3",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.14.0",
+    "typescript": "3.4.5"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": false,
+    "exclude": [
+      "src/**/*.spec.ts",
+      "src/models/**/*.ts",
+      "src/test-utils/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "text-summary",
+      "html"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 160,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "proseWrap": "preserve"
+  }
+}

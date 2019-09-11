@@ -1,0 +1,1 @@
+{"version":3,"file":"isAcronym.js","sourceRoot":"","sources":["../../src/utils/isAcronym.ts"],"names":[],"mappings":";;AAAa,QAAA,SAAS,GAAG,CAAC,GAAW,EAAW,EAAE;IAChD,IAAI,OAAO,GAAG,KAAK,QAAQ;QAAE,OAAO,KAAK,CAAC;IAC1C,OAAO,GAAG,CAAC,WAAW,EAAE,KAAK,GAAG,CAAC;AACnC,CAAC,CAAC"}

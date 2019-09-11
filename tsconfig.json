@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDirs": [
+      "./src"
+    ]
+  },
+  "exclude": [
+    "logs",
+    "node_modules",
+    "develop-here.ts",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
+}
